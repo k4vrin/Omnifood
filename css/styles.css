@@ -1,0 +1,75 @@
+/*
+
+----------------- 01 Typography System
+
+Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Font Weights
+    Default: 400
+
+-Line Heights
+    Default: 1
+
+
+
+----------------- 02 Colors
+
+-Primary: #e67e22
+-Tints:
+-Shades:
+-Accents:
+-Grays:
+#555
+
+
+----------------- 05 Shadows
+
+----------------- 06 Border Radius
+
+----------------- 07 White Space
+
+-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+html {
+    /* Changing the default root font size */
+    /* font-size: 10px; */
+    /* Setting the font size to 10px will make calculation easier */
+    font-size: 62.5%;
+    /* This is more accessible. equal to 10px when default font size is 16px */
+}
+
+.test {
+    
+    background-color: red;
+    padding: 100px;
+    /* width: 1000px; */
+    /* If the container width is larger than the specified max width than
+     the width of the element is equal to the value that was specified to the max width
+     and when the container width was less than the specified max width than
+     the width of the element will be 100% of the container width*/
+    max-width: 1000px;
+}
+
+.test {
+    max-width: 50rem;
+    color: #fff;
+    font-size: 2rem;
+    padding: 4rem;
+    /* By default 1 rem is 16px */
+}
