@@ -1,124 +1,3 @@
-/*
-
------------------ 01 Typography System
-
-Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
--Font Weights
-    Default: 400
-    Medium: 500
-    Semi-Bold: 600
-    Bold: 700
-
--Line Heights
-    Default: 1
-    Small: 1.05
-    Paragraph: 1.6
-
-
-
------------------ 02 Colors
-
--Primary: #e67e22
--Tints: #fdf2e9
--Shades: #cf711f
--Accents:
--Grays:
-#555
-#333
-
-
------------------ 05 Shadows
-
------------------ 06 Border Radius
-    Default: 9px
-
------------------ 07 White Space
-
--SPACING SYSTEM (px)
-    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-    
-    
-*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    /* Changing the default root font size */
-    /* font-size: 10px; */
-    /* Setting the font size to 10px will make calculation easier */
-    font-size: 62.5%;
-    /* This is more accessible. equal to 10px when default font size is 16px */
-}
-
-body {
-    font-family: "Rubik", sans-serif;
-    line-height: 1;
-    font-weight: 400;
-    color: #555;
-}
-
-/***************************/
-/** GENERAL REUSABLE COMPONENT **/
-/***************************/
-
-.margin-right-sm {
-    /* To insure that this style always applied  */
-    margin-right: 1.6rem !important;
-}
-
-.heading-primary {
-    font-size: 5.2rem;
-    font-weight: 700;
-    line-height: 1.05;
-    color: #333;
-    letter-spacing: -0.5px;
-    margin-bottom: 3.2rem;
-}
-
-.btn:link,
-.btn:visited {
-    font-size: 2rem;
-    font-weight: 600;
-    display: inline-block;
-    padding: 1.6rem 3.2rem;
-    text-decoration: none;
-    border-radius: 9px;
-
-    /* Always put transition on original state */
-    transition: background-color 200ms;
-}
-
-.btn--full:link,
-.btn--full:visited {
-    background-color: #e67e22;
-    color: #fff;
-}
-
-.btn--full:hover,
-.btn--full:active {
-    background-color: #cf711f;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-    background-color: #fff;
-    color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-    background-color: #fdf2e9;
-
-    /* border: 3px solid #fff; */
-    /* To add border inside */
-    box-shadow: inset 0 0 0 3px #fff;
-}
 
 /***************************/
 /** HEADER **/
@@ -201,7 +80,7 @@ body {
 
 .hero-description {
     font-size: 2rem;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 4.8rem;
 }
 
@@ -240,4 +119,76 @@ body {
 .delivered-text span {
     color: #cf711f;
     font-weight: 700;
+}
+
+/***************************/
+/** HOW IT WORKS SECTION **/
+/***************************/
+
+.section-how {
+    padding: 9.6rem 0;
+}
+
+.step-number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+
+}
+
+.step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.step-img-box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+    content: "";
+    display: block;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+    
+    width: 60%;
+    /* this will not work */
+    /* height: 60%; */
+
+    /* 60% of parent width */
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+    /* The element that have higher value of z index will appear first */
+    z-index: -2;
+    
+}
+
+.step-img-box::after {
+    width: 45%;
+    /* this will not work */
+    /* height: 60%; */
+
+    /* 60% of parent width */
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+    /* The element that have higher value of z index will appear first */
+    z-index: -1;
+}
+
+.step-img {
+    width: 35%;
 }
