@@ -42,6 +42,7 @@ Font sizes (px)
 
 ----------------- 06 Border Radius
     Default: 9px
+    Medium: 11px
 
 ----------------- 07 White Space
 
@@ -105,11 +106,6 @@ body {
     align-items: center;
 }
 
-.margin-right-sm {
-    /* To insure that this style always applied  */
-    margin-right: 1.6rem !important;
-}
-
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -156,7 +152,8 @@ body {
     border-radius: 9px;
 
     /* Always put transition on original state */
-    transition: background-color 200ms;
+    /* transition: background-color 200ms; */
+    transition: all 200ms;
 }
 
 .btn--full:link,
@@ -183,4 +180,40 @@ body {
     /* border: 3px solid #fff; */
     /* To add border inside */
     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 300ms;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+
+/** HELPER/SETTING CLASSES **/
+
+
+.margin-right-sm {
+    /* To insure that this style always applied  */
+    margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
+strong {
+    font-weight: 500;
 }
