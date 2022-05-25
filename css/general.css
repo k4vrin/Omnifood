@@ -29,7 +29,10 @@ Font sizes (px)
 -Tints: 
     #fdf2e9
     #fae5d3
--Shades: #cf711f
+    #eb984e
+-Shades: 
+    #cf711f
+    #45260a
 -Accents:
 -Grays:
     #555
@@ -40,6 +43,9 @@ Font sizes (px)
 
 
 ----------------- 05 Shadows
+
+Horizontal Vertical Blur 
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 ----------------- 06 Border Radius
     Default: 9px
@@ -57,6 +63,11 @@ Font sizes (px)
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem #e67d2280;
 }
 
 html {
@@ -81,7 +92,7 @@ body {
 .container {
     /* 1140px is common too */
     max-width: 120rem;
-    padding: 0 4.8rem;
+    padding: 0 3.2rem;
     margin: 0 auto;
 }
 
@@ -147,6 +158,7 @@ body {
     letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
     font-size: 2rem;
@@ -155,6 +167,9 @@ body {
     padding: 1.6rem 3.2rem;
     text-decoration: none;
     border-radius: 9px;
+
+    cursor: pointer;
+    border: none;
 
     /* Always put transition on original state */
     /* transition: background-color 200ms; */
@@ -185,6 +200,18 @@ body {
     /* border: 3px solid #fff; */
     /* To add border inside */
     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: #fff;
+    color: #555;
 }
 
 .link:link,
@@ -242,3 +269,4 @@ body {
 strong {
     font-weight: 500;
 }
+
