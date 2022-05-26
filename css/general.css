@@ -81,6 +81,9 @@ html {
     /* This is more accessible. equal to 10px when default font size is 16px */
 
     overflow-x: hidden;
+
+    /* Works in chrome and firefox only */
+    /* scroll-behavior: smooth; */
 }
 
 body {

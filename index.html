@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/queries.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <title>Omnifood</title>
 </head>
 
@@ -22,11 +24,11 @@
         </a>
         <nav class="main-nav" aria-label="main navigation menu">
             <ul class="main-nav-list">
-                <li><a href="#" class="main-nav-link">How it works</a></li>
-                <li><a href="#" class="main-nav-link">Meals</a></li>
-                <li><a href="#" class="main-nav-link">Testimonials</a></li>
-                <li><a href="#" class="main-nav-link">Pricing</a></li>
-                <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
+                <li><a href="#how" class="main-nav-link">How it works</a></li>
+                <li><a href="#meals" class="main-nav-link">Meals</a></li>
+                <li><a href="#testimonials" class="main-nav-link">Testimonials</a></li>
+                <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+                <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
             </ul>
         </nav>
         <button class="btn-mobile-nav">
@@ -44,8 +46,8 @@
                     <p class="hero-description">The smart 365-days-per-year food subscription that will make you eat
                         healthy
                         again. Tailored to your personal tastes and nutritional needs.</p>
-                    <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-                    <a href="#" class="btn btn--outline">Learn more &darr;</a>
+                    <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
+                    <a href="#how" class="btn btn--outline">Learn more &darr;</a>
                     <div class="delivered-meals">
                         <div class="delivered-imgs">
                             <img src="img/customers/customer-1.jpg" alt="Customer photo">
@@ -81,7 +83,7 @@
         </section>
 
         <!-- How it works Section -->
-        <section class="section-how">
+        <section class="section-how" id="how">
             <div class="container">
                 <span class="subheading">How it works</span>
                 <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -130,7 +132,7 @@
         </section>
 
         <!-- Meals Section -->
-        <section class="section-meals">
+        <section class="section-meals" id="meals">
             <!-- Meals Heading -->
             <div class="container center-text">
                 <span class="subheading">Meals</span>
@@ -228,7 +230,7 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section class="section-testimonials">
+        <section class="section-testimonials" id="testimonials">
             <!-- Testimonials Heading -->
             <div class="testimonials-container">
                 <span class="subheading">Testimonials</span>
@@ -341,7 +343,7 @@
         </section>
 
         <!-- Pricing & Features Section -->
-        <section class="section-pricing">
+        <section class="section-pricing" id="pricing">
             <!-- Pricing Heading -->
             <div class="container">
                 <span class="subheading">Pricing</span>
@@ -439,7 +441,7 @@
             </div>
         </section>
         <!-- CTA Section -->
-        <section class="section-cta">
+        <section class="section-cta" id="cta">
             <div class="container">
                 <div class="cta">
                     <!-- CTA Text -->
@@ -504,7 +506,7 @@
                         </a></li>
                 </ul>
 
-                <p class="copyright">Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+                <p class="copyright">Copyright &copy; <span class="year">2027</span> by Omnifood, Inc. All rights reserved.
                 </p>
             </div>
             <!-- Footer address -->
