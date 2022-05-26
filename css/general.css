@@ -15,6 +15,7 @@ Font sizes (px)
     Default: 1
     Small: 1.05
     Medium: 1.2
+    Large: 1.8
     Paragraph: 1.6
 
 -Letter spacing
@@ -74,9 +75,12 @@ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 html {
     /* Changing the default root font size */
     /* font-size: 10px; */
+    /* 10px /16px = 0.625 = 62.5% */
     /* Setting the font size to 10px will make calculation easier */
     font-size: 62.5%;
     /* This is more accessible. equal to 10px when default font size is 16px */
+
+    overflow-x: hidden;
 }
 
 body {
@@ -84,6 +88,10 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+
+    /* Only works if there is nothing absolutely
+    positioned in relation to body */
+    overflow-x: hidden;
 }
 
 /***************************/
@@ -240,6 +248,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+    line-height: 1.2;
 }
 
 .list-item {
